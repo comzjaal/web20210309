@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+    <!-- h1.para*2>lorem1^p.para*2>lorem -->
+    <h1 class="para">Lorem.</h1>
+    <h1 class="para">Eum.</h1>
+    <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis minima magnam adipisci voluptatem culpa dolorum tempore asperiores, deleniti nam totam mollitia magni impedit optio non dolore velit dicta vel fugiat!</p>
+    <p class="para">Dolorem dolore error sit repudiandae adipisci in, corrupti placeat id nam aperiam quisquam harum a esse expedita veritatis, fugit nisi sed consequuntur beatae vero odit eaque? Sequi quidem ab possimus.</p>
+
+    <script>
+        var p = document.querySelectorAll("p.para");
+        console.log(p[0].innerHTML);
+
+        var q = document.querySelectorAll(".para");
+        console.log(q[2].innerHTML);
+    </script>
+</body>
+</html>

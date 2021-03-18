@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <script>
+        function process(params) {
+
+            var a = document.getElementById("input1").value;
+            var b = document.getElementById("input2").value;
+            var c = add(params);
+            var d = minus(params);
+            var e = tiems(params);
+            var f = divide(params);
+
+            function add(params) {
+
+                return Number(a) + Number(b);
+            }
+
+            function minus(params) {
+
+                return a - b;
+            }
+
+            function times(params) {
+
+                return a * b;
+            }
+
+            function divide(params) {
+
+                return a / b;
+            }
+        }
+
+    </script>
+</body>
+
+</html>

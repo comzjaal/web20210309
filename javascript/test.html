@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <input type="text" id="input1">
+
+    <button onClick="add()" id="button1"><i class="fas fa-plus fa-2x"></i></button>
+    <button id="button2" onClick="minus()"><i class="fas fa-minus fa-2x"></i></button>
+    <button id="button3" onClick="times()"><i class="fas fa-times fa-2x"></i></button>
+    <button id="button4" onClick="divide()"><i class="fas fa-divide fa-2x"></i></button>
+
+    <input type="text" id="input2">
+
+    <br>
+    <br>
+
+    <p id="result"></p>
+
+
+    <script>
+        function add(params) {
+
+            var a = document.getElementById("input1").value;
+            var b = document.getElementById("input2").value;
+            document.getElementById("result").innerHTML = Number(a) + Number(b);
+        }
+        function minus(params) {
+
+            var a = document.getElementById("input1").value;
+            var b = document.getElementById("input2").value;
+            document.getElementById("result").innerHTML = a-b;
+        }
+        function times(params) {
+
+            var a = document.getElementById("input1").value;
+            var b = document.getElementById("input2").value;
+            document.getElementById("result").innerHTML = a*b;
+        }
+        function divide(params) {
+
+            var a = document.getElementById("input1").value;
+            var b = document.getElementById("input2").value;
+            document.getElementById("result").innerHTML = a/b;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <!-- (#result$^hr)*4 -->
+    <div id="result1"></div>
+    <hr>
+    <div id="result2"></div>
+    <hr>
+    <div id="result3"></div>
+    <hr>
+    <div id="result4"></div>
+    <hr>
+
+    <script>
+        
+        var txt = "";
+        var i = 0;
+        while (i < 5) {
+            var j = 0;
+            while (j <= i) {
+                txt += "*";
+                j++;
+            }
+            i++;
+            txt += "<br>";
+        }
+        document.getElementById("result1").innerHTML = txt;
+
+        var txt = "";
+        var i = 0;
+        while (i < 5) {
+            var j = 5;
+            while (j > i) {
+                txt += "*";
+                j--;
+            }
+            i++;
+            txt += "<br>";
+        }
+        document.getElementById("result2").innerHTML = txt;
+
+        var txt = "";
+        var i = 0;
+        while (i < 5) {
+            var k = 0;
+            while (k < i) {
+                txt += "&nbsp;"
+                k++         
+            }
+            var j = 5;
+            while (j > i) {
+                txt += "*";
+                j--;
+            }
+            i++;
+            txt += "<br>";
+        }
+        document.getElementById("result3").innerHTML = txt;
+
+        var txt = "";
+        var i = 0;
+        while (i < 5) {
+            var k = 5;
+            while (k > i) {
+                txt += "&nbsp;"
+                k--;
+            }
+
+            var j = 0;
+            while (j <= i) {
+                txt += "*";
+                j++;
+            }
+            i++;
+            txt += "<br>";
+        }
+        document.getElementById("result4").innerHTML = txt;
+    </script>
+</body>
+
+</html>

@@ -1,51 +1,12 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <link rel="stylesheet" href="../css/all.min.css">
-    <style>
-    </style>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+
+</style>
 </head>
+<body style="background-color: black;">
 
-<body>
-    <!-- input#input$*2 -->
-    <input type="text" id="input1">
-    <input type="text" id="input2">
-
-    <br>
-    <!-- button*2[onClick]>i.fas.fa-plus -->
-    <button onClick="process('+')"><i class="fas fa-plus"></i></button>
-    <button onClick="process('-')"><i class="fas fa-minus"></i></button>
-
-    <!-- #result -->
-    <div id="result"></div>
-
-    <script>
-        function add(a, b) {
-            return a + b;
-        }
-
-        function minus(x, y) {
-            return x - y;
-        }
-
-        function process(op) {
-            var x = Number(document.getElementById("input1").value);
-            var y = Number(document.getElementById("input2").value);
-            
-            var res = 0;
-
-            switch (op) {
-                case '+':
-                    res = add(x, y);
-                    break;
-                case '-':
-                    res = minus(x, y);
-                    break;
-            }
-            document.getElementById("result").innerHTML = res;
-        }
-    </script>
 </body>
-
 </html>
